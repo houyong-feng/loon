@@ -40,7 +40,7 @@ All变量适用
 
 ================Loon==============
 [Script]
-cron "47 4 27-30,1,2 11,12 *" script-path=gua_opencard73.js
+cron "47 22 27-30,1,2 11,12 *" script-path=gua_opencard73.js
 
 
 */
