@@ -97,7 +97,11 @@ if ($.isNode()) {
     await $.wait(1000)
     res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/chinnkarahoi/sc@master/shareCodes/cfd.json')
   }
-  let res2 = []
+  let res2 = await getAuthorShareCode('https://raw.githubusercontent.com/chinnkarahoi/sc/master/shareCodes/cfd.json')
+  if (!res2) {
+    await $.wait(1000)
+    res2 = await getAuthorShareCode('https://raw.fastgit.org/chinnkarahoi/sc/master/shareCodes/cfd.json')
+  }
   $.strMyShareIds = [...(res && res.shareId || []), ...(res2 || [])]
   await shareCodesFormat()
   for (let i = 0; i < cookiesArr.length; i++) {
