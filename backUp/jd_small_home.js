@@ -77,7 +77,7 @@ const JD_API_HOST = 'https://lkyl.dianpusoft.cn/api';
       await smallHome();
     }
   }
-  // $.inviteCodes = await getAuthorShareCode('https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jd_updateSmallHomeInviteCode.json')
+  // $.inviteCodes = await getAuthorShareCode('https://raw.githubusercontent.com/chinnkarahoi/sc/master/shareCodes/jd_updateSmallHomeInviteCode.json')
   // if (!$.inviteCodes) {
   //   $.http.get({url: 'https://purge.jsdelivr.net/gh/zero205/updateTeam@main/shareCodes/jd_updateSmallHomeInviteCode.json'}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
   //   await $.wait(1000)

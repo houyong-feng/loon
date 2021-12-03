@@ -49,7 +49,7 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
     $.updatePkActivityIdRes = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/jd_cityShareCodes.json')
   }
   let tempcode = []
-  tempcode = await getAuthorShareCode('https://raw.fastgit.org/zero205/updateTeam/main/shareCodes/jd_cityShareCodes.json')
+  tempcode = await getAuthorShareCode('https://raw.fastgit.org/chinnkarahoi/sc/master/shareCodes/jd_cityShareCodes.json')
   $.updatePkActivityIdRes = [...$.updatePkActivityIdRes,...(tempcode || [])]
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {

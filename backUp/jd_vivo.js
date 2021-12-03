@@ -28,9 +28,9 @@ $.shareUuid = '';
         if(!res){res = [];}
     }
     let res2 = [];
-    try{res2 = await getAuthorShareCode('https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/vivo.json');}catch (e) {}
+    try{res2 = await getAuthorShareCode('https://raw.githubusercontent.com/chinnkarahoi/sc/master/shareCodes/vivo.json');}catch (e) {}
     if(!res2){
-        try{res2 = await getAuthorShareCode('https://raw.fastgit.org/zero205/updateTeam/main/shareCodes/vivo.json');}catch (e) {}
+        try{res2 = await getAuthorShareCode('https://raw.fastgit.org/chinnkarahoi/sc/master/shareCodes/vivo.json');}catch (e) {}
         if(!res2){res2 = [];}
     }
     res = [...res, ...res2]

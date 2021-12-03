@@ -73,10 +73,10 @@ let tokenInfo = {}, hotInfo = {}
     await $.wait(1000)
     res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/ddworld.json')
   }
-  let res2 = await getAuthorShareCode('https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/ddworld.json')
+  let res2 = await getAuthorShareCode('https://raw.githubusercontent.com/chinnkarahoi/sc/master/shareCodes/ddworld.json')
   if (!res2) {
     await $.wait(1000)
-    res2 = await getAuthorShareCode('https://raw.fastgit.org/zero205/updateTeam/main/shareCodes/ddworld.json')
+    res2 = await getAuthorShareCode('https://raw.fastgit.org/chinnkarahoi/sc/master/shareCodes/ddworld.json')
   }
   $.shareCodes = [...$.shareCodes, ...[...(res || []), ...(res2 || [])].sort(() => 0.5 - Math.random())]
   for (let i = 0; i < cookiesArr.length; i++) {
