@@ -11,7 +11,7 @@
 
 ==============Loon==============
 [Script]
-cron "4 3,13,18,21 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js,tag=京喜领88元红包
+cron "11 3,13,19,23 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js,tag=京喜领88元红包
 
 ================Surge===============
 京喜领88元红包 = type=cron,cronexp="4 3,13,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js
@@ -51,7 +51,11 @@ const BASE_URL = 'https://m.jingxi.com/cubeactive/steprewardv3'
     res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/chinnkarahoi/sc@master/shareCodes/jxhb.json')
   }
   if (res && res.activeId) $.activeId = res.activeId;
-  let res2 = []
+  let res2 = await getAuthorShareCode('https://raw.githubusercontent.com/chinnkarahoi/sc/master/shareCodes/jxhb.json')
+  if (!res2) {
+    await $.wait(1000)
+    res2 = await getAuthorShareCode('https://raw.fastgit.org/chinnkarahoi/sc/master/shareCodes/jxhb.json')
+  }
   $.authorMyShareIds = [...((res && res.codes) || []),...(res2 || [])];
   //开启红包,获取互助码
   for (let i = 0; i < cookiesArr.length; i++) {
