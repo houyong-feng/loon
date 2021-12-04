@@ -13,7 +13,7 @@ cron 20 1,8 * * * jx_sign.js
 
 ================Loon==============
 [Script]
-cron "20 1,8 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jx_sign.js,tag=京喜签到
+cron "20 1,8,16 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jx_sign.js,tag=京喜签到
 
 ===============Surge=================
 京喜签到 = type=cron,cronexp="20 1,8 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jx_sign.js
@@ -78,7 +78,7 @@ if ($.isNode()) {
     }
   }
   console.log('作者助力码追加至最后!如有剩余次数则给作者助力!感谢!')
-  const author = ['0835255e912f819bc9a990359d62479f']
+  const author = ['7265a6472097db93faba311eaffb75f2', '6340846c41ac57dbdfe550dc24c812d8', 'b09f3a86cdd9a92200cf845e8183d3bb', 'ca5d02514003734bd63e53d83489a9b8', '8fef179040029bc42a24fe83b216b1f8']
   for (let i = 0; i < author.length; i++) {
     $.shareCodes.push({
       'use': 'zero205',
