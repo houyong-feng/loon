@@ -11,7 +11,7 @@
 
 ==============Loon==============
 [Script]
-cron "11 3,10,12,21 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js,tag=京喜领88元红包
+cron "11 3,10,12,16,21 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js,tag=京喜领88元红包
 
 ================Surge===============
 京喜领88元红包 = type=cron,cronexp="4 3,13,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_jxlhb.js
