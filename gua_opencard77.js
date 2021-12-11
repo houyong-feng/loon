@@ -35,7 +35,7 @@ All变量适用
 
 ================Loon==============
 [Script]
-cron "40 1,10,17 1-15 12 *" script-path=gua_opencard77.js
+cron "10 1,10,17 1-15 12 *" script-path=gua_opencard77.js
 
 ============Quantumultx===============
 [task_local]
