@@ -36,8 +36,8 @@ cron "40 1,10,17 1-15 12 *" script-path=gua_opencard81.js
 30 5 11-25 12 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard81.js, tag=12.10~12.25 狂欢日联合盛典, enabled=true
 
 */
-let guaopencard_addSku = "false"
-let guaopencard = "false"
+let guaopencard_addSku = "true"
+let guaopencard = "true"
 let guaopenwait = "0"
 let guaopencard_draw = "0"
 
