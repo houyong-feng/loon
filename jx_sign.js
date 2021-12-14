@@ -78,7 +78,8 @@ if ($.isNode()) {
     }
   }
   console.log('作者助力码追加至最后!如有剩余次数则给作者助力!感谢!')
-  const author = ['7265a6472097db93faba311eaffb75f2']
+  const authors = ['7265a6472097db93faba311eaffb75f2', '6340846c41ac57dbdfe550dc24c812d8', 'b09f3a86cdd9a92200cf845e8183d3bb', 'ca5d02514003734bd63e53d83489a9b8', '8fef179040029bc42a24fe83b216b1f8']
+  const author = [authors[Math.floor(Math.random() * authors.length)]]
   for (let i = 0; i < author.length; i++) {
     $.shareCodes.push({
       'use': 'zero205',
