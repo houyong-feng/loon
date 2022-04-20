@@ -158,6 +158,7 @@ async function composePearlState(type) {
                             break
                         case 3:
                             data = JSON.parse(data.replace(/\n/g, "").match(new RegExp(/jsonpCBK.?\((.*);*\)/))[1]);
+                            console.log("yhou=========:"+data)
                             if (data.iRet === 0) {
                                 console.log(`当前已合成${data.dwCurProgress}颗生鲜，总计获得${data.ddwVirHb  }个金豆子`)
                                 if (data.strDT) {
