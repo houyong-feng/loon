@@ -125,6 +125,7 @@ async function cfd() {
 async function composePearlState(type) {
     return new Promise(async (resolve) => {
         $.get(taskUrl(`user/ComposePinPinPearlState`, `__t=${Date.now()}&dwGetType=0`), async (err, resp, data) => {
+            console.log("yhou=========:"+data.toString())
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
@@ -158,7 +159,6 @@ async function composePearlState(type) {
                             break
                         case 3:
                             data = JSON.parse(data.replace(/\n/g, "").match(new RegExp(/jsonpCBK.?\((.*);*\)/))[1]);
-                            console.log("yhou=========:"+data.toString())
                             if (data.iRet === 0) {
                                 console.log(`当前已合成${data.dwCurProgress}颗生鲜，总计获得${data.ddwVirHb  }个金豆子`)
                                 if (data.strDT) {
