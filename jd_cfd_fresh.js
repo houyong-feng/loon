@@ -208,6 +208,7 @@ async function composePearlState(type) {
                             data = JSON.parse(data.replace(/\n/g, "").match(new RegExp(/jsonpCBK.?\((.*);*\)/))[1]);
                             console.log(`每日抽奖`)
                             if (data.iRet === 0) {
+                                console.log("yhou============:"+data.dayDrawInfo)
                                 if (data.dayDrawInfo.dwIsDraw === 0) {
                                     let strToken = (await getPearlDailyReward()).strToken
                                     await $.wait(2000)
