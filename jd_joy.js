@@ -901,6 +901,7 @@ function taskUrl(url) {
   let lkt = new Date().getTime()
   let lks = $.md5('' + 'q8DNJdpcfRQ69gIx' + lkt).toString()
   let Host = url.split('/')[2]
+  console.log(`Host`+Host);
   if (Host === "jdjoy.jd.com") {
     url += "&reqSource=h5"
     return {
