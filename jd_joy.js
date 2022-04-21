@@ -77,6 +77,7 @@ let joyRunNotify = true;//宠汪汪赛跑获胜后是否推送通知，true推�
       // const zooFaker = require('./JDJRValidator_Aaron');
       // $.validate = await zooFaker.injectToRequest()
       await jdJoy();
+      console.log(`=================`);
       await showMsg();
       // await joinTwoPeopleRun();
     }
