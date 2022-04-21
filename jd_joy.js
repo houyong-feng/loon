@@ -93,6 +93,7 @@ let joyRunNotify = true;//宠汪汪赛跑获胜后是否推送通知，true推�
 async function jdJoy() {
   try {
     await getPetTaskConfig();
+    console.log(`getPetTaskConfig();`);
     if ($.getPetTaskConfigRes.success) {
       if ($.isNode()) {
         if (process.env.JOY_FEED_COUNT) {
@@ -661,6 +662,7 @@ function getPetTaskConfig() {
   return new Promise(resolve => {
     const url = `https://draw.jdfcloud.com//common/pet/getPetTaskConfig?invokeKey=q8DNJdpcfRQ69gIx`
     $.get(taskUrl(url), (err, resp, data) => {
+      console.log(`getPetTaskConfig  data`+data);
       try {
         if (err) {
           console.log(JSON.stringify(err))
