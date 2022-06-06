@@ -187,19 +187,19 @@ async function jdFruit() {
   await showMsg();
 }
 function runTimes() {
-  return new Promise((resolve, reject) => {
-    $.get({
-      url: `https://api.jdsharecode.xyz/api/runTimes?activityId=farm&sharecode=${$.farmInfo.farmUserPro.shareCode}`
-    }, (err, resp, data) => {
-      if (err) {
-        console.log('上报失败', err)
-        reject(err)
-      } else {
-        console.log(data)
-        resolve()
-      }
-    })
-  })
+//   return new Promise((resolve, reject) => {
+//     $.get({
+//       url: `https://api.jdsharecode.xyz/api/runTimes?activityId=farm&sharecode=${$.farmInfo.farmUserPro.shareCode}`
+//     }, (err, resp, data) => {
+//       if (err) {
+//         console.log('上报失败', err)
+//         reject(err)
+//       } else {
+//         console.log(data)
+//         resolve()
+//       }
+//     })
+//   })
 }
 async function doDailyTask() {
   await taskInitForFarm();
